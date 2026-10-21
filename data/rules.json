@@ -1,0 +1,98 @@
+[
+  {
+    "name": "High-value inbound leads",
+    "enabled": true,
+    "trigger": "lead_created",
+    "conditions": [
+      {
+        "field": "deal_value",
+        "operator": "greater_than",
+        "value": 5000
+      }
+    ],
+    "actions": [
+      {
+        "type": "set_priority",
+        "value": "high"
+      },
+      {
+        "type": "assign_owner",
+        "value": "Senior sales"
+      },
+      {
+        "type": "add_tag",
+        "value": "high-value"
+      },
+      {
+        "type": "create_task",
+        "value": "Schedule a discovery call within 24 hours"
+      }
+    ]
+  },
+  {
+    "name": "Inbound website lead follow-up",
+    "enabled": true,
+    "trigger": "lead_created",
+    "conditions": [
+      {
+        "field": "source",
+        "operator": "equals",
+        "value": "website"
+      }
+    ],
+    "actions": [
+      {
+        "type": "add_tag",
+        "value": "inbound"
+      },
+      {
+        "type": "create_task",
+        "value": "Send personalized welcome email"
+      }
+    ]
+  },
+  {
+    "name": "Customer escalation",
+    "enabled": true,
+    "trigger": "ticket_created",
+    "conditions": [
+      {
+        "field": "severity",
+        "operator": "equals",
+        "value": "critical"
+      }
+    ],
+    "actions": [
+      {
+        "type": "set_priority",
+        "value": "urgent"
+      },
+      {
+        "type": "assign_owner",
+        "value": "Customer success lead"
+      },
+      {
+        "type": "create_task",
+        "value": "Respond to critical customer ticket"
+      }
+    ]
+  },
+  {
+    "name": "Proposal follow-up",
+    "enabled": true,
+    "trigger": "stage_changed",
+    "conditions": [
+      {
+        "field": "stage",
+        "operator": "equals",
+        "value": "Proposal"
+      }
+    ],
+    "actions": [
+      {
+        "type": "create_task",
+        "value": "Follow up on proposal after 2 business days"
+      }
+    ]
+  }
+]

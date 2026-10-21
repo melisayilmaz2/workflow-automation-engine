@@ -1,0 +1,42 @@
+[
+  {
+    "id": "L001",
+    "event_type": "lead_created",
+    "name": "Nova Creative",
+    "source": "website",
+    "deal_value": 9300
+  },
+  {
+    "id": "L002",
+    "event_type": "lead_created",
+    "name": "Olive Labs",
+    "source": "referral",
+    "deal_value": 2500
+  },
+  {
+    "id": "L003",
+    "event_type": "lead_created",
+    "name": "Orbit Media",
+    "source": "website",
+    "deal_value": 6800
+  },
+  {
+    "id": "T004",
+    "event_type": "ticket_created",
+    "name": "Atlas Support",
+    "severity": "critical"
+  },
+  {
+    "id": "L005",
+    "event_type": "stage_changed",
+    "name": "Luma Works",
+    "stage": "Proposal"
+  },
+  {
+    "id": "L006",
+    "event_type": "lead_created",
+    "name": "Acme Services",
+    "source": "ads",
+    "deal_value": 1200
+  }
+]

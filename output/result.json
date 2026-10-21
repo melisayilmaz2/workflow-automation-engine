@@ -1,0 +1,133 @@
+{
+  "processed_events": [
+    {
+      "id": "L001",
+      "event_type": "lead_created",
+      "name": "Nova Creative",
+      "source": "website",
+      "deal_value": 9300,
+      "priority": "high",
+      "owner": "Senior sales",
+      "tags": [
+        "high-value",
+        "inbound"
+      ]
+    },
+    {
+      "id": "L002",
+      "event_type": "lead_created",
+      "name": "Olive Labs",
+      "source": "referral",
+      "deal_value": 2500
+    },
+    {
+      "id": "L003",
+      "event_type": "lead_created",
+      "name": "Orbit Media",
+      "source": "website",
+      "deal_value": 6800,
+      "priority": "high",
+      "owner": "Senior sales",
+      "tags": [
+        "high-value",
+        "inbound"
+      ]
+    },
+    {
+      "id": "T004",
+      "event_type": "ticket_created",
+      "name": "Atlas Support",
+      "severity": "critical",
+      "priority": "urgent",
+      "owner": "Customer success lead"
+    },
+    {
+      "id": "L005",
+      "event_type": "stage_changed",
+      "name": "Luma Works",
+      "stage": "Proposal"
+    },
+    {
+      "id": "L006",
+      "event_type": "lead_created",
+      "name": "Acme Services",
+      "source": "ads",
+      "deal_value": 1200
+    }
+  ],
+  "tasks": [
+    {
+      "lead_id": "L001",
+      "task": "Schedule a discovery call within 24 hours",
+      "owner": "Senior sales",
+      "status": "open"
+    },
+    {
+      "lead_id": "L001",
+      "task": "Send personalized welcome email",
+      "owner": "Senior sales",
+      "status": "open"
+    },
+    {
+      "lead_id": "L003",
+      "task": "Schedule a discovery call within 24 hours",
+      "owner": "Senior sales",
+      "status": "open"
+    },
+    {
+      "lead_id": "L003",
+      "task": "Send personalized welcome email",
+      "owner": "Senior sales",
+      "status": "open"
+    },
+    {
+      "lead_id": "T004",
+      "task": "Respond to critical customer ticket",
+      "owner": "Customer success lead",
+      "status": "open"
+    },
+    {
+      "lead_id": "L005",
+      "task": "Follow up on proposal after 2 business days",
+      "owner": "Unassigned",
+      "status": "open"
+    }
+  ],
+  "audit_log": [
+    {
+      "event_id": "L001",
+      "rule": "High-value inbound leads",
+      "actions": 4
+    },
+    {
+      "event_id": "L001",
+      "rule": "Inbound website lead follow-up",
+      "actions": 2
+    },
+    {
+      "event_id": "L003",
+      "rule": "High-value inbound leads",
+      "actions": 4
+    },
+    {
+      "event_id": "L003",
+      "rule": "Inbound website lead follow-up",
+      "actions": 2
+    },
+    {
+      "event_id": "T004",
+      "rule": "Customer escalation",
+      "actions": 3
+    },
+    {
+      "event_id": "L005",
+      "rule": "Proposal follow-up",
+      "actions": 1
+    }
+  ],
+  "summary": {
+    "total_events": 6,
+    "rules_triggered": 6,
+    "tasks_created": 6
+  }
+}
